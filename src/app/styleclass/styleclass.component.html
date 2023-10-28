@@ -1,0 +1,7 @@
+<p [ngClass]="{online: serverStatus === 'online'}">styleclass works!</p>
+<button class="btn btn-primary"  (click)="function1()">Add Server</button>
+<ul>
+    <li *ngFor="let user of users">{{user}}</li>
+
+</ul>
+<app-server  *ngFor="let user of users"></app-server>

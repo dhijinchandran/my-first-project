@@ -1,0 +1,7 @@
+<p>forloop works!</p>
+<button class="btn btn-primary" (click)="onToggleDetails()">display details</button>
+<p *ngIf="showSecret"> password = tuna</p>
+<div *ngFor="let logitem of log; let i= index"
+ [ngStyle]="{backgroundColor: logitem>=4? 'blue':'red'}"
+ [ngClass]="{'white-text':logitem>=4}"
+>{{i}}  {{logitem}}  <p><button (click)="remove(i)"></button></p></div>
